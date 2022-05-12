@@ -18,6 +18,15 @@ Use some sort of looping. Do Not use String.prototype.replace
 
 const urlEncode = function(text) {
     // Put your solution here
+    let newString = "";
+    for ( let i = 0 ; i < text.length ; i++ ) {
+      if (text[i] === " " && i > 0) {
+          newString += "%20";
+      } else if (text[i] != " ") {
+        newString += text[i];
+      }
+    }
+    return newString;
   };
   
   console.log(urlEncode("cornerstone college")); //cornerstone%20college
