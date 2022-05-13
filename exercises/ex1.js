@@ -4,7 +4,7 @@ We will then have to find the two largest numbers in that array, and sum them to
 
 Instruction
 Create a function named sumLargestNumbers that will receive an array of numbers and return the sum of the two largest numbers in that array.
-*/
+*/ 
 
 const sumLargestNumbers = function(data) {
     // Put your solution here

@@ -20,7 +20,7 @@ const conditionalSum = function(values, condition) {
     }
     return sum;
   };
-  
+
 console.log(conditionalSum([1, 2, 3, 4, 5], "even")); // 6
 console.log(conditionalSum([1, 2, 3, 4, 5], "odd")); // 9
 console.log(conditionalSum([13, 88, 12, 44, 99], "even")); // 144

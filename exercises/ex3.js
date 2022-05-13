@@ -19,6 +19,7 @@ const numberOfVowels = function(data) {
     return num;
   };
   
+  
   console.log(numberOfVowels("orange")); // 3
   console.log(numberOfVowels("cornerstone college")); // 7
   console.log(numberOfVowels("aeiou")); // 5
