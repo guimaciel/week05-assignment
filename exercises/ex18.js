@@ -22,6 +22,23 @@ Create a function named squareCode that will receive a message, and return the s
 
 const squareCode = function(message) {
   // Put your solution here
+  message = message.replace(/\s/g, '');
+  const width = Math.ceil(Math.sqrt(message.length));
+  let result = [];
+  for (let i = 0 ; i < width ; i++) {
+    for (let j = 0 ; j < width ; j++ ) {
+      if (!result[j]) {
+        result[j] = "";
+      }
+      if ((i*width)+j < message.length) {
+        result[j] += message[(i*width)+j]; 
+      }
+    }
+    
+  }
+  result = result.join("\n");
+  console.log();
+  return result;
 };
 
 console.log(squareCode("chill out")); // clu hlt io  

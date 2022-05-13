@@ -21,9 +21,65 @@ Dime (10¢)
 Nickel (5¢)
 Penny (1¢)
 */
-
 const calculateChange = function(total, cash) {
   // Your code here
+  let change = cash - total;
+  let cashChange = {};
+  let value = 0;
+
+  value = Math.floor(change / (20 * 100));
+  if (value > 0) {
+    cashChange.twentyDollar = value;
+    change -= 20 * 100 * value;
+  }
+
+  value = Math.floor(change / (10 * 100));
+  if (value > 0) {
+    cashChange.tenDollar = value;
+    change -= 10 * 100 * value;
+  }
+
+  value = Math.floor(change / (5 * 100));
+  if (value > 0) {
+    cashChange.fiveDollar = value;
+    change -= 5 * 100 * value;
+  }
+
+  value = Math.floor(change / (2 * 100));
+  if (value > 0) {
+    cashChange.twoDollar = value;
+    change -= 2 * 100 * value;
+  }
+
+  value = Math.floor(change / (1 * 100));
+  if (value > 0) {
+    cashChange.oneDollar = value;
+    change -= 1 * 100 * value;
+  }
+
+  value = Math.floor(change / 25);
+  if (value > 0) {
+    cashChange.quarter = value;
+    change -= 25 * value;
+  }
+
+  value = Math.floor(change / 10);
+  if (value > 0) {
+    cashChange.dime = value;
+    change -= 10 * value;
+  }
+
+  value = Math.floor(change / 5);
+  if (value > 0) {
+    cashChange.nickel = value;
+    change -= 5 * value;
+  }
+
+  if (change > 0) {
+    cashChange.penny = change;
+  }
+
+  return cashChange;
 };
 
 console.log(calculateChange(1787, 2000)); // { twoDollar: 1, dime: 1, penny: 3 }

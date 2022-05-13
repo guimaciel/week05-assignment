@@ -11,16 +11,14 @@ Create a function named instructorWithLongestName that will receive an array of 
 
 const instructorWithLongestName = function(instructors) {
     // Put your solution here
-    let size = 0;
-    let pos = 0;
+    let highInstructor = instructors[0];
 
     for ( let i = 0 ; i < instructors.length ; i++ ) {
-      if (instructors[i].name.length > size) {
-        size = instructors[i].name.length;
-        pos = i;
+      if (instructors[i].name.length > highInstructor.name.length) {
+        highInstructor = instructors[i];
       }
     }
-    return instructors[pos];
+    return highInstructor;
   };
   
   console.log(instructorWithLongestName([

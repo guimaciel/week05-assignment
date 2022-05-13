@@ -7,9 +7,17 @@ Instruction
 Create a function named multiplicationTable that receives a number maxValue as input and creates a square multiplication table where maxValue is the largest value in the table.
 */
 
-Input
+
 const multiplicationTable = function(maxValue) {
   // Your code here
+  let result = "";
+  for (let x = 1 ; x <= maxValue ; x++) {
+    for(let y = 1 ; y <= maxValue ; y++) {
+      result += (x * y) + " ";
+    }
+    result += "\n";
+  }
+  return result;
 };
 
 console.log(multiplicationTable(1));

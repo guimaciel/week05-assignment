@@ -20,7 +20,7 @@ const urlEncode = function(text) {
     // Put your solution here
     let newString = "";
     for ( let i = 0 ; i < text.length ; i++ ) {
-      if (text[i] === " " && i > 0) {
+      if (text[i] === " " && i > 0 && i < text.length -1) {
           newString += "%20";
       } else if (text[i] != " ") {
         newString += text[i];
