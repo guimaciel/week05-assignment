@@ -109,20 +109,8 @@ function queenThreat(board) {
   return false;
 }
 
-function printBoard(board) {
-  let result = "";
-  for (let i = 0 ; i < 8 ; i++) {
-    for (let j = 0 ; j < 8 ; j++) {
-      result += board[i][j] + " ";
-    }
-    result += "\n";
-  }
-  console.log(result);
-}
-
 let whiteQueen = [1, 0];
 let blackQueen = [6, 5];
 let generatedBoard = generateBoard(whiteQueen, blackQueen);
-// console.log(generatedBoard);
-printBoard(generatedBoard);
+console.log(generatedBoard);
 console.log(queenThreat(generatedBoard));
