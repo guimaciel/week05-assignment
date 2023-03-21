@@ -22,7 +22,7 @@ Nickel (5¢)
 Penny (1¢)
 */
 
-const calculateChange = function(total, cash) {
+const calculateChange = function (total, cash) {
   // Your code here
 };
 
@@ -30,5 +30,4 @@ console.log(calculateChange(1787, 2000)); // { twoDollar: 1, dime: 1, penny: 3 }
 console.log(calculateChange(2623, 4000)); // { tenDollar: 1, twoDollar: 1, oneDollar: 1, quarter: 3, penny: 2 }
 console.log(calculateChange(501, 1000)); // { twoDollar: 2, quarter: 3, dime: 2, penny: 4 }
 
-
-
+module.exports = calculateChange;

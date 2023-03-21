@@ -15,9 +15,9 @@ For more information on casing styles, read Wikipedia's Special Case Styles for 
 
 */
 
-const makeCaze = function(input, caze) {
+const makeCaze = function (input, caze) {
   // Put your solution here
-}
+};
 
 console.log(makeCaze("this is a string", "camel")); // thisIsAString
 console.log(makeCaze("this is a string", "pascal")); // ThisIsAString
@@ -28,3 +28,4 @@ console.log(makeCaze("this is a string", "vowel")); // thIs Is A strIng
 console.log(makeCaze("this is a string", "consonant")); // THiS iS a STRiNG
 console.log(makeCaze("this is a string", ["upper", "snake"])); // THIS_IS_A_STRING
 
+module.exports = makeCaze;

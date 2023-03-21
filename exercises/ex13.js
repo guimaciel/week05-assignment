@@ -8,10 +8,12 @@ Instruction
 Create a function named talkingCalendar that takes in a date string with the format YYYY/MM/DD, and returns a new human readable date that looks like December 2nd, 2017.
 */
 
-const talkingCalendar = function(date) {
+const talkingCalendar = function (date) {
   // Your code here
 };
 
 console.log(talkingCalendar("2017/12/02")); // December 2nd, 2017
 console.log(talkingCalendar("2007/11/11")); // November 11th, 2007
 console.log(talkingCalendar("1987/08/24")); // August 24th, 1987
+
+module.exports = talkingCalendar;

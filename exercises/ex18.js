@@ -22,15 +22,17 @@ Instruction
 Create a function named squareCode that will receive a message, and return the secret square code version of the message.
 */
 
-const squareCode = function(message) {
+const squareCode = function (message) {
   // Put your solution here
 };
 
-console.log(squareCode("chill out")); // clu hlt io  
+console.log(squareCode("chill out")); // clu hlt io
 console.log(squareCode("feed the dog")); // fto ehg ee dd
 console.log(squareCode("have a nice day")); // hae and via ecy
-console.log(squareCode("if man was meant to stay on the ground god would have given us roots")); // imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn sseoau
+console.log(
+  squareCode(
+    "if man was meant to stay on the ground god would have given us roots"
+  )
+); // imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn sseoau
 
-
-
-
+module.exports = squareCode;
